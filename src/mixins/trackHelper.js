@@ -74,7 +74,7 @@ export var getTrackLeft = function (spec) {
 
   checkSpecKeys(spec, [
    'slideIndex', 'trackRef', 'infinite', 'centerMode', 'slideCount', 'slidesToShow',
-   'slidesToScroll', 'slideWidth', 'listWidth', 'variableWidth', 'slideHeight']);
+   'slidesToScroll', 'slideWidth', 'listWidth', 'variableWidth', 'slideHeight','rtlForce']);
 
   var slideOffset = 0;
   var targetLeft;
@@ -149,5 +149,5 @@ export var getTrackLeft = function (spec) {
       }
   }
 
-  return targetLeft;
+  return (spec.rtlForce) ? -1*targetLeft : targetLeft;
 };

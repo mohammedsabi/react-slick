@@ -141,6 +141,7 @@ export var InnerSlider = createReactClass({
       lazyLoad: this.props.lazyLoad,
       lazyLoadedList: this.state.lazyLoadedList,
       rtl: this.props.rtl,
+      rtlForce: this.props.rtlForce,
       slideWidth: this.state.slideWidth,
       slidesToShow: this.props.slidesToShow,
       slidesToScroll: this.props.slidesToScroll,
